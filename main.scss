@@ -1,0 +1,178 @@
+$mainColor1: #4D3D25;
+$mainColor2: #3C4823;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url(./city.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.header__text {
+    font-family: 'Mouse Memoirs', sans-serif;
+    background-color: $mainColor2;
+    // width: 70%;
+    margin: 0 auto;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+    display: inline-block;
+}
+
+
+
+.container {
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+
+
+    &__block {
+        width: 150px;
+        border-radius: 10px;
+        border-radius: 10px;
+
+        .time {
+            background-color: $mainColor1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 150px;
+            font-size: 95px;
+
+        }
+
+        .title {
+            background-color: $mainColor2;
+            padding: 5px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            text-align: center;
+            color: white;
+            font-family: 'Mouse Memoirs', sans-serif;
+            font-size: 18px;
+            letter-spacing: 0.3em;
+
+        }
+    }
+}
+
+
+.timer {
+    margin-bottom: 150px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    gap: 5px;
+
+
+    .button {
+        bottom: none;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+        width: 180px;
+        transition: .3 ease-in-out;
+        cursor: pointer;
+
+        &.start,
+        &.stop {
+            color: $mainColor1;
+
+            &:hover {
+                background-color: $mainColor2;
+                color: white;
+            }
+        }
+
+        &.pause {
+            &:hover {
+                background-color: red;
+                color: white;
+            }
+        }
+
+        &.finish {
+            &:hover {
+                background-color: red;
+                color: white;
+            }
+        }
+
+    }
+}
+
+.result__block {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    width: 150px;
+    border: 1px solid pink;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    background-color: #2C1010;
+    opacity: 0.8;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 0;
+    z-index: 5;
+}
+
+
+.footer {
+    background-color: $mainColor1;
+    min-height: 70px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 30%;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}

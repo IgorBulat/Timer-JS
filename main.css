@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: url(./city.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.header__text {
+  font-family: "Mouse Memoirs", sans-serif;
+  background-color: #3C4823;
+  margin: 0 auto;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  padding: 10px 5px;
+  display: inline-block;
+}
+
+.container {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.timer__block {
+  width: 150px;
+  border-radius: 10px;
+  border-radius: 10px;
+}
+.timer__block .time {
+  background-color: #4D3D25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 150px;
+  font-size: 95px;
+}
+.timer__block .title {
+  background-color: #3C4823;
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  color: white;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.3em;
+}
+
+.timer {
+  margin-bottom: 150px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  gap: 5px;
+}
+.buttons .button {
+  bottom: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
+  width: 180px;
+  transition: 0.3 ease-in-out;
+  cursor: pointer;
+}
+.buttons .button.start, .buttons .button.stop {
+  color: #4D3D25;
+}
+.buttons .button.start:hover, .buttons .button.stop:hover {
+  background-color: #3C4823;
+  color: white;
+}
+.buttons .button.pause:hover {
+  background-color: red;
+  color: white;
+}
+.buttons .button.finish:hover {
+  background-color: red;
+  color: white;
+}
+
+.result__block {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  width: 150px;
+  border: 1px solid pink;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  background-color: #2C1010;
+  opacity: 0.8;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 0;
+  z-index: 5;
+}
+
+.footer {
+  background-color: #4D3D25;
+  min-height: 70px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  width: 30%;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}/*# sourceMappingURL=main.css.map */

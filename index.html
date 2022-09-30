@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Mouse+Memoirs&family=Oleo+Script+Swash+Caps:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Timer</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__text">
+                    <h1>Безграничные возможности времени</h1>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <section class="timer">
+                    <div class="timer__block">
+                        <div class="time hour">00</div>
+                        < </div>
+                            <div class="timer__block">
+                                <div class="time minute">00</div>
+                                <div class="title">Minute</div>
+                            </div>
+                            <div class="timer__block">
+                                <div class="time second">00</div>
+                                <div class="title">Second</div>
+                            </div>
+                            <div class="timer__block">
+                                <div class="time millisecond">00</div>
+                                <div class="title">Millisecond</div>
+                            </div>
+                </section>
+                <section class="buttons">
+                    <button class="button start">Start</button>
+                    <button class="button pause">Pause</button>
+                    <button class="button stop">Stop</button>
+                    <button class="button finish">Finish</button>
+                </section>
+            </div>
+            <div class="result__block">
+                <div class="result__title">Results</div>
+                <div class="results"></div>
+            </div>
+        </main>
+        <footer class="footer">Простой таймер на JavaScript</footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
